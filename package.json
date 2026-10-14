@@ -1,13 +1,19 @@
 {
-  "name": "shopswift-pos",
+  "name": "shopswift-client",
   "version": "1.0.0",
   "private": true,
-  "description": "ShopSwift Point of Sale - MERN stack",
+  "type": "module",
   "scripts": {
-    "postinstall": "npm --prefix server install && npm --prefix client install",
-    "dev": "concurrently -n API,WEB -c blue,green \"npm --prefix server run dev\" \"npm --prefix client run dev\""
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "concurrently": "^9.0.1"
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
   }
 }
